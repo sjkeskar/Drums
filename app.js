@@ -1,10 +1,20 @@
-const btnum = document.querySelectorAll(".drum").length;
-for(var i=0;i<btnum;i++){
-document.querySelectorAll(".drum")[i].addEventListener("click",justtried);
-}
+// const btnum = document.querySelectorAll(".drum").length;
+// for(var i=0;i<btnum;i++){
+// document.querySelectorAll(".drum")[i].addEventListener("click",justtried);
+// }
 
-function justtried() {
+document.addEventListener('keypress',function (event) {
+    justtried(event.key);
+});
+
+function justtried( a ) {
+    /*
+    if(a){
+        const clicked = a;
+    }else{
     const clicked = this.innerText;
+    }*/
+    const clicked = a;
     switch(clicked){
         case "w":
             var audio = new Audio("sounds/tom-1.mp3");
