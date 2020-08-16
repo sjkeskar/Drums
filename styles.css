@@ -17,31 +17,38 @@ footer {
 }
 
 .w {
-
+  background-image: url("images/tom1.png");
+  opacity: 70%;
 }
 
 .a {
-
+  background-image: url("images/tom2.png");
+  opacity: 70%;
 }
 
 .s {
-
+  background-image: url("images/tom3.png");
+  opacity: 70%;
 }
 
 .d {
-
+  background-image: url("images/tom4.png");
+  opacity: 70%;
 }
 
 .j {
-
+  background-image: url("images/snare.png");
+  opacity: 70%;
 }
 
 .k {
-
+  background-image: url("images/crash.png");
+  opacity: 70%;
 }
 
 .l {
-
+  background-image: url("images/kick.png");
+  opacity: 70%;
 }
 
 .set {
