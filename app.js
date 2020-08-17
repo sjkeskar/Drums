@@ -5,6 +5,7 @@ document.querySelectorAll(".drum")[i].addEventListener("click",texttried);
 
 document.addEventListener('keypress',function (event) {
     justtried(event.key);
+    console.log(event.key);
 });
 
 function texttried() {
@@ -50,5 +51,19 @@ function justtried( a ) {
             audio.play();
             console.log("bass");
             break;
+        default:
+            console.log("Nothing");
+            break;
     }
+    anime(clicked);
+}
+
+function anime( a ){
+    if(a != null){
+    const yup = document.querySelector("."+a);
+    yup.classList.add("pressed");
+    setTimeout(function(){
+        yup.classList.remove("pressed");
+    },100);
+}
 }
